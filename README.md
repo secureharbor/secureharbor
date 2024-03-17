@@ -33,6 +33,16 @@ npx hardhat compile
 npx hardhat run scripts/Insurance.deploy.js --network optimism
 ```
 
+5. Make sure all apps are up and running:
+```
+kubectl get pods -n llama
+NAME                                                READY   STATUS    RESTARTS   AGE
+llama-gpt-api-78c8f4b9df-zqgws                      1/1     Running   0          3h14m
+llama-gpt-ui-8448485c94-xqk6g                       1/1     Running   0          3h25m
+presidio-presidio-analyzer-6894fb577f-xh7xx         1/1     Running   0          126m
+presidio-presidio-anonymizer-7569b6cf45-vhx5x       1/1     Running   0          131m
+presidio-presidio-image-redactor-7648d64cf5-zhp4l   1/1     Running   0          131m
+```
 ## Use case
 
 1. Analyze, anonimize and denonimize PII in Insurance Claims using Presidio running in our k8s cluster:
