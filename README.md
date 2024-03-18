@@ -43,6 +43,10 @@ presidio-presidio-analyzer-6894fb577f-xh7xx         1/1     Running   0         
 presidio-presidio-anonymizer-7569b6cf45-vhx5x       1/1     Running   0          131m
 presidio-presidio-image-redactor-7648d64cf5-zhp4l   1/1     Running   0          131m
 ```
+
+6. Use DeepEval to evaluate:
+https://github.com/confident-ai/deepeval
+
 ## Use case
 
 1. Analyze, anonimize and denonimize PII in Insurance Claims using Presidio running in our k8s cluster:
